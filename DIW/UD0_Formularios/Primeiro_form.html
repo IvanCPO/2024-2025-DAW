@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <style>
+        form{
+            border: 1px solid;
+            border-radius: 1em;
+            width: 400px;
+            padding: 1em;
+            
+        }
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        input, textarea{
+            width: 250px;
+        }
+        textarea{
+            vertical-align: top;
+        }
+        button{
+            margin-left: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" name="mail" id="mail">
+            </li>
+            <li>
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message"></textarea>
+            </li>
+        </ul>
+        <button>Enviar tu mensaje</button>
+    </form>
+</body>
+</html>

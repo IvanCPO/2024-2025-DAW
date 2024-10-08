@@ -1,14 +1,28 @@
 services:
-  # web1:
-  #   image: httpd
-  #   ports:
-  #     - 80:80
-  #     - 443:443
-  #   volumes:
-  #     - ./html:/usr/local/apache2/htdocs
+  web1:
+    image: httpd
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
   bd:
     image: mysql
     ports:
       - 3306:3306
+    env_file:
+      - .env
     volumes:
-      - MYSQL_ROOR_PASSWORD=abc123.
+      -datosdb:/var/lib/mysql
+    secrets:
+      - db_root_password
+      - db_password
+volumes:
+  bd:
+    
+secrets:
+  db_password:
+    file: db_password.txt
+  db_root_password:
+    file: db_root_password.txt
+    

@@ -1,22 +1,23 @@
 services:
   web1:
-    image: httpd
+    # image: httpd
+    build: debian
     ports:
       - 80:80
       - 443:443
     volumes:
       - ./html:/usr/local/apache2/htdocs
-  bd:
-    image: mysql
-    ports:
-      - 3306:3306
-    env_file:
-      - .env
-    volumes:
-      -datosdb:/var/lib/mysql
-    secrets:
-      - db_root_password
-      - db_password
+    bd:
+      image: mysql
+      ports:
+        - 3306:3306
+      env_file:
+        - .env
+      volumes:
+        -datosdb:/var/lib/mysql
+      secrets:
+        - db_root_password
+        - db_password
 volumes:
   bd:
     

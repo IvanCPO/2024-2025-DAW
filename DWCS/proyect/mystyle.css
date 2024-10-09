@@ -1,0 +1,16 @@
+header{
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+h1{
+    padding: 100px 0px 0px 100px;
+}
+#catamaran{
+    padding: 0px 100px 0px 0px;
+    margin-top: 50px;
+}

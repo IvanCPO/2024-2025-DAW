@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(123, 200, 215);
+}
+
 header{
     /* height: 270px; */
     display: flex;
@@ -9,11 +13,11 @@ header{
 }
 
 footer{
+    position: absolute;
     height: 170px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
+    clear:both;
     display: flex;
     align-items: center;
     color: white;
@@ -23,7 +27,38 @@ footer{
     padding: 0px 40px 0px 40px;
     border-top: dashed white;
 }
-h1, h2, h3{
+
+#body_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#menu{
+    width: 30%;
+    background: rgb(63, 161, 150);
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+}
+#menu>ul>li{
+    padding: 20px 0px 20px 50px;
+    font-size: 30px;
+
+}
+li>a {
+    color: black;
+    text-decoration: none;
+}
+#contents{
+    padding: 30px;
+    width: 70%;
+}
+#menu>ul>li, h1, h2, h3{
     font-family: "Bebas Neue", sans-serif;
 }
 h1{

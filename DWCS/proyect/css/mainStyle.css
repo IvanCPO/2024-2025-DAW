@@ -1,0 +1,37 @@
+header{
+    /* height: 270px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(57, 173, 202);
+    /* background-size: cover;
+    background-position-y: center; */
+}
+
+footer{
+    height: 170px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(71, 78, 80);
+    padding: 0px 40px 0px 40px;
+    border-top: dashed white;
+}
+h1, h2, h3{
+    font-family: "Bebas Neue", sans-serif;
+}
+h1{
+    padding: 80px 0px 0px 100px;
+    font-size: 80px;
+}
+#catamaran{
+    padding: 0px 100px 0px 0px;
+    margin-top: 50px;
+    height: 250px;
+}

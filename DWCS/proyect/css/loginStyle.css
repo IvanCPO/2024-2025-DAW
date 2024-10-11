@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#login{
+    background-color: rgb(219, 238, 255);
+    border: solid 2px;
+    border-radius: 20px;
+    width: min-content;
+    padding: 70px;
+    margin-bottom: 170px;
+    text-align: center;
+
+}
+
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr>td:first-child{
+    text-align: end;
+}
+
+#button{
+    width: 200px;
+    background-color: rgb(0, 201, 201);
+    border: solid 2px blue;
+    border-radius: 5px;
+}
+span{
+    color: red;
+    background-color: rgb(245, 157, 157);
+}
+
+
+
+h1 {
+    padding: 0px;
+}
+footer{
+    bottom: 0;
+}

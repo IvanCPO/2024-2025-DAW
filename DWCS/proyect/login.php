@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     $nameUser = "";
     $pass = "";
     $checkOption = false;
@@ -9,11 +9,31 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST)) {
             $error="";
+            $continue=true;
             $nameUser = $_POST["nameuser"];
             $pass = $_POST["password"];
             $checkOption = (isset($_POST["terms"]))?true:false;
-            if (!empty($nameUser)) {
-                $error=+"Introduce the user name.";
+            if (empty($nameUser)) {
+                $error=$error."Introduce the user name.<br>";
+                $continue = false;
+            }
+            if (empty($pass)) {
+                $error=$error."Introduce the user's password.<br>";
+                $continue = false;
+            }
+            if ($pass!=$_POST["repit"]) {
+                $error=$error."The password is incorrect, repeat the password so that they are identical.<br>";
+                $continue = false;
+            }
+            if (!$checkOption) {
+                $error=$error."You need to accept the terms.<br>";
+                $continue = false;
+            }
+            if ($continue) {
+                $_SESSION["nameuser"] = $nameUser;
+                $_SESSION["password"] = $pass;
+                header('Location: index.php');
+                exit;
             }
         }
     }
@@ -58,7 +78,7 @@
                         <label>Repit Password:</label>
                     </td>
                     <td>
-                        <input type="password" placeholder="Repit your password">
+                        <input type="password" name="repit" placeholder="Repit your password">
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +86,11 @@
                         <label>Accept terms:</label>
                     </td>
                     <td>
-                        <input type="checkbox" name="terms" id="terms"> Estoy de acuerto con los terminos de uso.
+                        <input type="checkbox" name="terms" id="terms"
+                        <?php
+                        if($checkOption) echo "checked";
+                        ?>
+                        > Estoy de acuerto con los terminos de uso.
                     </td>
                 </tr>
             </table>
@@ -74,25 +98,15 @@
             <span>
                 <?php 
                     if (!$continue && !empty($error)) {
-                        echo "<p>* ".$error." *</p>";
+                        echo "<p>* <br>".$error." *</p>";
                     }
                 ?>
             </span>
         </form>
     </div>
-    
-    
-    <footer>
-        <div id="contact">
-            <h2>Contact:</h2>
-            <ul>
-                <li>Email: contact@musselroute.com</li>
-                <li>Telephone: +34 666 77 88 99</li>
-            </ul>
-        </div>
-        <div id="legacy">
-            <p>Avisos legales</p>
-        </div>
-    </footer>
+
+    <?php 
+        include 'fragments/footer.php';
+    ?>
 </body>
 </html>

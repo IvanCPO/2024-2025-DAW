@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(123, 200, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#login{
+    background-color: rgb(219, 238, 255);
+    border: solid 2px;
+    border-radius: 20px;
+    width: min-content;
+    padding: 70px;
+    margin-bottom: 170px;
+    text-align: center;
+
+}
+
+
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    padding: 80px 0px 0px 100px;
+    font-size: 80px;
+}
+
+tr>td:first-child{
+    text-align: end;
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+}
+
+#button{
+    width: 200px;
+    background-color: rgb(0, 201, 201);
+    border: solid 2px grey;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h1 {
+    padding: 0px;
+}
+
+select{
+    width: 100%;
+    background-color: rgb(0, 201, 201);
+    border: 2px solid grey;
+}

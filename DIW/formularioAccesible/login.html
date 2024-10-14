@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <title>PHP_Proyect_IVÁN</title>
+</head>
+<body>
+    <div id="login">
+        <form action="">
+            <table>
+                <h1>Login</h1>
+                <tr>
+                    <td>
+                        <label for="username">Username:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="username" placeholder="Introduce your nickname or your Email" aria-required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" placeholder="Introduce your password" aria-required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="repitPass">Repit Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="repitPass" placeholder="Repit your password" aria-required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="terms">Accept terms:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="terms" id="terms" aria-required="true"> Estoy de acuerto con los terminos de uso.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="language">Select a language:</label>
+                    </td>
+                    <td>
+                        <select name="language" id="language" aria-required="true">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="pt">Portuguese</option>
+                            <option value="ru">Russian</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="ar">Arabic</option>
+                            <option value="hi">Hindi</option>
+                            <option value="bn">Bengali</option>
+                            <option value="pa">Punjabi</option>
+                            <option value="vi">Vietnamese</option>
+                            <option value="th">Thai</option>
+                            <option value="nl">Dutch</option>
+                            <option value="tr">Turkish</option>
+                            <option value="pl">Polish</option>
+                            <option value="sv">Swedish</option>
+                            <option value="da">Danish</option>
+                            <option value="no">Norwegian</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="button" value="Login" id="button" aria-label="Logueate con tu cuenta dándole al botón">
+        </form>
+    </div>
+</body>
+</html>

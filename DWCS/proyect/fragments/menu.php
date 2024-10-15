@@ -1,3 +1,4 @@
+
 <div id="menu">
     <ul>
         <li><a href="index.php">HOME</a></li>
@@ -6,8 +7,15 @@
         <?php
             echo (isset($_SESSION["nameuser"]))? "ticket.php" : "login.php";
         ?>">TAKE YOUR TICKET</a></li>
-        <li><button id="exit">
+        <?php 
+        if (isset($_SESSION["nameuser"])) {
+            ?>
+        <li><a href="fragments/logout.php" id="exit">
             <img src="img/logout.png" alt="icon of logout" width="50px">LOGOUT
-        </button></li>
+        </a></li>
+            <?php
+        }
+        
+        ?>
     </ul>
 </div>

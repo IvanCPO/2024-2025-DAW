@@ -95,7 +95,7 @@
                 </tr>
             </table>
             <input type="submit" id="button" value="Login">
-            <span>
+            <span class="error">
                 <?php 
                     if (!$continue && !empty($error)) {
                         echo "<p>* <br>".$error." *</p>";

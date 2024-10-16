@@ -1,9 +1,16 @@
 
-table{
+.error{
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+
+#info_user{
     border: 4px dashed;
     background-color: rgb(255, 223, 81);
     margin-bottom: 30px;
 }
+ 
 td{
     padding: 15px 20px 15px 20px;
     text-align: center;

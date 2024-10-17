@@ -2,7 +2,6 @@
     session_start();
 
     $hours = [
-        "10:30",
         "11:00",
         "11:30",
         "12:00",
@@ -62,7 +61,9 @@
             setcookie("children", $children, time() + (86400 * 30), "/");
             setcookie("babys", $babys, time() + (86400 * 30), "/");
             setcookie("day", $day, time() + (86400 * 30), "/");
-            setcookie("hour", $hour, time() + (86400 * 30), "/");
+            setcookie("hour", htmlspecialchars($hour), time() + (86400 * 30), "/");
+            header('Location: end.php');
+            exit;
         }
     }
 ?>

@@ -6,6 +6,7 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 2</p>
     </div>
     <div class="board">
         <img src="./img/catamaran.png" alt="BoardPictireError">
@@ -14,6 +15,7 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 2</p>
     </div>
     <div class="board">
         <img src="./img/catamaran.png" alt="BoardPictireError">
@@ -22,6 +24,7 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 4</p>
     </div>
     <div class="board">
         <img src="./img/catamaran.png" alt="BoardPictireError">
@@ -30,6 +33,7 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 3</p>
     </div>
     <div class="board">
         <img src="./img/catamaran.png" alt="BoardPictireError">
@@ -38,6 +42,16 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 3</p>
+    </div>
+    <div class="board">
+        <img src="./img/catamaran.png" alt="BoardPictireError">
+        <h2>Babuxa</h2>
+        <ul>
+            <li>contactValue</li>
+            <li>pageValue</li>
+        </ul>
+        <p>GATE 3</p>
     </div>
     <div class="board">
         <img src="./img/catamaran.png" alt="BoardPictireError">
@@ -46,5 +60,6 @@
             <li>contactValue</li>
             <li>pageValue</li>
         </ul>
+        <p>GATE 1</p>
     </div>
 </div>

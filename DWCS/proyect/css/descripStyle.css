@@ -32,3 +32,9 @@
     border-top: dashed 4px;
     background-color: rgb(209, 177, 35);
 }
+.board p{
+    text-align: end;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    margin: 0px;
+}

@@ -1,13 +1,57 @@
 # THE MUSSEL ROUTE
+During my summers, I have been working in **tourist travel companies**, so I decided to create this page using all the **knowledge** I acquired during that time.
 
-Como en mis veranos he estado trabajando en unas empresas de viajes turísticos, he decido hacer la pagina con todo mi conocimiento adquirido durante esa etapa.
+The page will focus on the **Mussel Route**, provide information about the **boats**, and allow users to **book** their trips directly.
 
-La página hablará sobre la ruta del mejillón, hablará de los barcos y hará una guía hacia cada barco en el muelle de O Grove.
+## **NAVIGATION**
 
-## Datos de diseño
+On this page, **navigation** is quick and easy through the **left side menus**, where you can access:
 
-La pagina tendra un cabezado grande que enseñara la ría de Arousa y lo continuara información sobre lo que es la ruta con sus precios y ubicación. Habrá un botón al final de toda esta información que servirá para hacer la compra.
+- **Home page (HOME)**
+- **Description (DESCRIPTION)**
+- **Make a reservation (TAKE YOUR TICKET)**
 
-Al intentar esta tarea el usuario tendrá que loguearse primero. Cuando lo hago podra realizar el tramite correspondiente, rellenando un formulario.
+When you log in, the option to **log out (LOGOUT)** will also appear, which will take you back to the home page. These options are present on **all pages**, except for the **login** and **purchase confirmation** pages.
 
-A parte, en la página podrás acceder a mas información sobre los barcos accediendo a un enlace del menu lateral, o podrás ver fotos realizadas por algunos trabajadores sobre la ruta.
+Additionally, there will be **two buttons** that allow you to access the **login** and **purchase** pages. To proceed, it will be necessary to complete the **mandatory fields** in the form.
+
+The last navigation element is the **end.php** file, which is a link that allows you to **log out** and return to the **home page (RETURN HOME)**.
+
+![Navigation Model](<img/BOARD MODEL.png>)
+
+## **PROJECT STRUCTURE**
+
+![Project Structure](img/Tree.png)
+
+The project structure is organized as follows:
+
+- The **main files** of the pages, along with this document, are located in the **root directory** of the project.
+- There are **3 folders** for storing CSS styles, images used on the pages, and PHP code fragments that are included on the pages.
+
+### **CSS folder:**
+All pages apply the **mainStyle.css**, which defines the **font**, **colors**, and the **layout of containers** like the menu, among others. The other CSS files are specific to other pages.
+
+### **IMG folder:**
+This is where the **images** used throughout the page are stored, as well as those used in this document.
+
+### **Fragment folder:**
+In this folder, you will find all the **included elements** for the PHP pages, such as the file that ends the session and redirects you to the home page (**logout.php**).
+
+## **OFFICIAL PAGE VIEW**
+
+Description.php
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 163708.png>)
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 163723.png>)
+
+Login.php
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 173018.png>)
+
+Home.php
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 173107.png>)
+
+ticket.php
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 173922.png>)
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 173938.png>)
+
+End.php
+![alt text](<img/OFFICIALvist/Captura de pantalla 2024-10-17 172424.png>)

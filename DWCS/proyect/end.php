@@ -75,10 +75,16 @@
                 </td>
             </tr>
         </table>
-        <div id="end">
-            <p>Gracias por realizar su reserva con nosotros, una pagina de gran renombre y muchos contactos con el pentagono</p>
-            <h3><a href="fragments/logout.php">RETURN HOME</a></h3>
-        </div>
+        
+    </div>
+    <div id="end">
+        <h2>Thank You for Your Reservation!</h2>
+        <p>We appreciate your trust in our services and are excited to have you on board for your upcoming journey.</p>
+        <p>Your reservation has been successfully completed. We look forward to providing you with a memorable experience.</p>
+        <p>If you have any questions or need to make changes to your reservation, please don't hesitate to contact us.</p>
+        <p>Safe travels and see you soon!</p>
+        <p><b>Best regards,</b><br>The Team</p>
+        <h3><a href="fragments/logout.php">RETURN HOME</a></h3>
     </div>
 </body>
 </html>

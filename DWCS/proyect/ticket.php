@@ -82,7 +82,7 @@
 </head>
 <body>
     <header>
-        <h1>THE MUSSEL ROUTE description</h1>
+        <h1>THE MUSSEL ROUTE <br>TAKE YOUR TICKET</h1>
         <img src="img/catamaran.png" alt="catamaran" id="catamaran">
     </header>
 
@@ -166,25 +166,22 @@
                         }
                     ?>
                 </span>
-
-                <p>Toma la responsabilidad como comprador de acudir al barco a la hora propuesta e informará en caso de no poder llegar con media hora de antelación.</p>
-
+                
+                <h2>Important Notice</h2>
+                <p>Please read the following information carefully before proceeding with your reservation:</p>
+                <ul >
+                    <li>All reservations are subject to availability.</li>
+                    <li>We recommend arriving at least 30 minutes before your scheduled departure time.</li>
+                    <li>Cancellations made less than 24 hours before departure may incur a fee.</li>
+                    <li>By making a reservation, you agree to our terms and conditions.</li>
+                </ul>
+                <p>If you have any questions, please contact us.</p>
                 <input type="submit" value="BUY" id="button">
             </form>
         </div>
     </div>
-    
-    <footer>
-        <div id="contact">
-            <h2>Contact:</h2>
-            <ul>
-                <li>Email: contact@musselroute.com</li>
-                <li>Telephone: +34 666 77 88 99</li>
-            </ul>
-        </div>
-        <div id="legacy">
-            <p>Avisos legales</p>
-        </div>
-    </footer>
+        <?php 
+            include 'fragments/footer.php';
+        ?>
 </body>
 </html>

@@ -12,8 +12,8 @@ Esto es ilógico y molesta en general a todos los usuarios que entran en la pagi
 
 Perceptible: las imagenes, botones, enlaces... no son adecuados, ni tienen un alt
 
-Operable
+Operable: Te obligan a aceptar los terminos de una ventana que no aclara nada del contenido, no te piden nada y es inutil
 
-Comprensible
+Comprensible: La estructura esta rota. Nada mas redimensionar la ventana, los tamaños rompen la estetica de la pagina. Te indican que puedes clickar en un lado y no puedes clickar en nada.
 
-Robusto
+Robusto: No permite la lectura del propio navegador o de alguna herramienta de ayuda para poder leer el contenido gente con discapacidad visual... 

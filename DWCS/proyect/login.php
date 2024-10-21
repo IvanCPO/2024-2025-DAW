@@ -90,7 +90,7 @@
                         <?php
                         if($checkOption) echo "checked";
                         ?>
-                        > Estoy de acuerto con los terminos de uso.
+                        > I agree to the terms of use.
                     </td>
                 </tr>
             </table>

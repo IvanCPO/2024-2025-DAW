@@ -57,6 +57,8 @@ li>a {
 #contents{
     padding: 30px;
     width: 70%;
+    text-align: justify;
+
 }
 #menu>ul>li, h1, h2, h3{
     font-family: "Bebas Neue", sans-serif;
@@ -74,6 +76,17 @@ h1{
 tr>td:first-child{
     text-align: end;
     padding-right: 20px;
+}
+
+#map{
+    border: 2px dashed;
+    display: block;
+    position: relative;
+    float: right;
+    clear: both;
+    margin-left: 20px;
+    width: 50%;
+
 }
 
 #button{

@@ -2,18 +2,18 @@
 
 ![alt text](SOBRESATURADO.png)
 
-Esta página presenta una gran variedad de errores que rompen con todo lo enseñado en esta materia y es poco accesible.
+Esta página presenta una gran variedad de errores que contradicen *todo lo enseñado* en esta materia, además de ser **poco accesible**.
 
-El primer erro que nos salta en la cara es una notificación que salta nada más abrir la pagina que nos pregunta si en enefecto, no queremos recibir notificaciones y con solo la posibilidad de afirmar que no.
+El primer error que salta a la vista es una **notificación** que aparece inmediatamente al abrir la página, preguntando si, en efecto, no deseamos recibir más notificaciones, pero solo ofrece la posibilidad de confirmar que no. 
 
-Esto es ilógico y molesta en general a todos los usuarios que entran en la pagina.
+Esto resulta *ilógico* y genera molestia en la mayoría de los usuarios que visitan la página.
 
-## PAUTAS DESAFIADAS
+## Pautas desafiadas
 
-Perceptible: las imagenes, botones, enlaces... no son adecuados, ni tienen un alt
+**Perceptible:** Las imágenes, botones y enlaces **no son adecuados** ni cuentan con un atributo **alt** que describa su contenido.
 
-Operable: Te obligan a aceptar los terminos de una ventana que no aclara nada del contenido, no te piden nada y es inutil
+**Operable:** Se obliga al usuario a aceptar los términos en una ventana que **no aclara nada** sobre el contenido; además, no solicita ninguna acción útil, resultando innecesaria.
 
-Comprensible: La estructura esta rota. Nada mas redimensionar la ventana, los tamaños rompen la estetica de la pagina. Te indican que puedes clickar en un lado y no puedes clickar en nada.
+**Comprensible:** La estructura está rota. Al redimensionar la ventana, los tamaños de los elementos rompen la estética de la página. Se indica que es posible hacer clic en ciertos elementos, pero al intentar hacerlo, **no ocurre nada**.
 
-Robusto: No permite la lectura del propio navegador o de alguna herramienta de ayuda para poder leer el contenido gente con discapacidad visual... 
+**Robusto:** La página no permite ser leída por el navegador ni por herramientas de asistencia, lo que impide a personas con discapacidad visual acceder al contenido.

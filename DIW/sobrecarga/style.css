@@ -36,6 +36,10 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+nav a, nav a:hover{
+    text-decoration: none;
+    color: white;
+}
 
 label{
     margin: 0px;
@@ -87,6 +91,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 footer p{
     margin: 0;

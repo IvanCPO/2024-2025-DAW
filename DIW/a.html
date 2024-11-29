@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio posicionamento</title>
+    <style>
+        body {
+            font-weight: bold;
+            color: white;
+        }
+
+        #contenedor {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            border: solid 1px black;
+            background-color: #CCCCAA;
+        }
+
+        #contido1 {
+            width: 400px;
+            margin: 10px 30px;
+            border: solid 1px black;
+            background-color: #CCCCCC;
+        }
+
+        #contido2 {
+            width: 450px;
+            margin: 10px 30px;
+            padding: 10px;
+            border: solid 1px black;
+            background-color: #CCAAAA;
+        }
+
+        #caixa11 {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            border: solid 1px black;
+            margin: 10px;
+        }
+
+        #caixa12 {
+            width: 90px;
+            height: 90px;
+            background-color: #00FF00;
+            border: solid 1px black;
+            margin: 10px;
+        }
+
+        #caixa13 {
+            width: 110px;
+            height: 110px;
+            background-color: #0000FF;
+            border: solid 1px black;
+            margin: 10px;
+            position: relative;
+            bottom: 20px;
+            right: 10px;
+        }
+
+        .caixa21 {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            border: solid 1px black;
+            margin: 10px;
+        }
+
+        .caixa22 {
+            width: 90px;
+            height: 90px;
+            background-color: #00FF00;
+            border: solid 1px black;
+            margin: 10px;
+        }
+
+        .caixa23 {
+            width: 110px;
+            height: 110px;
+            background-color: #0000FF;
+            border: solid 1px black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="contido1">
+            <div id="caixa11"> Caixa 11 </div>
+            <div id="caixa12"> Caixa 12 </div>
+            <div id="caixa13"> Caixa 13 </div>
+        </div>
+        <div id="contido2">
+            <div class="caixa21"> Caixa 21 </div>
+            <div class="caixa22"> Caixa 22 </div>
+            <div class="caixa23"> Caixa 23 </div>
+        </div>
+    </div>
+</body>
+
+</html>

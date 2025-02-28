@@ -1,0 +1,9 @@
+{% load static %}
+<div class="comment card">
+    <img src="{% static "img/logo.png" %}" alt="Avatar of user">
+    <div class="card-body">
+        <h1>{{comment.user_name}}</h1>
+        <p>{{comment.comment_description}}</p>
+    </div>
+    
+</div>

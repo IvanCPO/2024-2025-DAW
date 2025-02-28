@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}AllPOSTS{% endblock title %}
+
+{% block content %}
+<div id="panel">
+    {% for post in posts %}
+    <div>
+        <h1><a href="{% url 'detail' post.slug %}">{{post.title}}</a></h1>
+        <p>{{post.author}}</p>
+        <p>{{post.date|date:'j/m/Y' }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

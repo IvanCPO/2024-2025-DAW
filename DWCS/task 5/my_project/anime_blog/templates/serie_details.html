@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{serie.title}}{% endblock title %}
+{% block content %}
+<div id="data">
+    <img src="{{serie.picture.url}}" alt="picture_serie">
+    <div>
+        <div>
+            <div>
+                <h1>{{serie.title}}</h1>
+                <h4>{{serie.author}}</h4>
+            </div>
+            <span> 
+                {% for cat in serie.categories.all %}
+                <a href="{% url "category_series" cat.pk %}">
+                    <button class="btn btn-outline-light">{{cat.title}}</button>
+                </a>
+                {% endfor %}
+            </span>
+        </div>
+        <hr>
+        <p>{{serie.description}}</p>
+    </div>
+</div>
+<h1>Comments</h1>
+<hr>
+<div id="comments">
+    {% for comment in comments %}
+    {% include "includes/base_comment.html" %}
+    {% endfor %}
+</div>
+    
+
+
+<div id="form">
+    {% if session is None %}
+
+    <a href="{% url "log_in" %}">
+        <button class="btn btn-outline-light">Login to Comment</button>
+    </a>
+
+    {% else %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Insert Comment</h1>
+        {% for field in comment_form %}
+            {{field.label_tag}}
+            {{field}}
+            {{field.errors}}
+        {% endfor %}
+        <button class="btn btn-outline-light"> Send</button>
+    </form>
+
+    {% endif %}
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}blog-data-MODEL{% endblock title %}
+
+{% block content %}
+<div class="imagP">
+    <img src="{% static "colacao.jpg" %}" alt="IntroBlogs Picture">
+    <div>
+        <h1>Blogs</h1>
+        <p>Esta páxina contén todos os meus blogs ordeados en orde descendente no tempo. Aquí solo amosarei 3 blogs</p>
+    </div>
+</div>
+{% include "blog/includes/posts.html" %}
+<a href="{% url "posts" %}"><button>VER TODOS</button></a>
+
+
+{% endblock content %}

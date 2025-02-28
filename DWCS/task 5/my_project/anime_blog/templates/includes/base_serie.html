@@ -1,0 +1,22 @@
+<div class="card mb-1 serie">
+    <div class="row g-0">
+        <div class="col-md-5">
+            <a href="{% url "serie_details" serie.slug%}">
+                <img src="{{ serie.picture.url }}" class="img-fluid rounded-start portada" alt="{{serie.slug}}-picture">
+            </a>
+        </div>
+        <div class="col-md-7 text-bg-dark">
+            <div class="card-body">
+                <h5 class="card-title">{{serie.title}}</h5>
+                <p class="card-text">{{serie.description|truncatewords:28}}</p>
+                <span> 
+                    {% for cat in serie.categories.all %}
+                    <a href="{% url "category_series" cat.pk%}">
+                        <button class="btn btn-outline-light">{{cat.title}}</button>
+                    </a>
+                    {% endfor %}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

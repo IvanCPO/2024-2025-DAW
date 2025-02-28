@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{post.title}}{% endblock title %}
+
+{% block content %}
+<div class="imagP">
+    <img src="{% static "blog/"|add:post.image_name %}" alt="{{post.title}}">
+    <div>
+        <h1>{{post.title}}</h1>
+        <h4>{{post.text}}</h4>
+        <p>{{post.date|date:'j/m/Y'}}    -     <a href="mailto:{{post.author.email}}?subject={{post.title}}">{{post.author}}</a></p>
+        
+        <h4>TAGS: {% for tag in post.tag.all %}
+        {{tag}} -
+        {% endfor %} </h4>
+
+        <p>{{post.content}}</p>
+    </div>
+</div>
+
+{% endblock content %}

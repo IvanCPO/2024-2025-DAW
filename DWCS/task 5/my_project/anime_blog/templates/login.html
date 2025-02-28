@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+{% block content %}
+
+<div id="form">
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Log in</h1>
+        {% for field in form %}
+            {{field.label_tag}}
+            {{field}}
+            {{field.errors}}
+        {% endfor %}
+        <button class="btn btn-outline-light"> Send</button>
+    </form>
+</div>
+
+{% endblock content %}

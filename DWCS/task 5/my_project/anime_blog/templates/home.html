@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Forum Anime{% endblock title %}
+{% block content %}
+<div id="intro">
+    <div id="category_menu">
+        {% for category in categories %}
+        <a href="{% url "category_series" category.pk%}">
+            <button class="btn btn-outline-primary catagory_home" >{{category.title}}</button>
+        </a>
+        {% endfor %}
+    </div>
+    <div>
+        <h1>Forum Anime</h1>
+        <p>Forum Anime began as a final project at IES San Clemente by Eva, created to help anime lovers discover the perfect series based on personalized ratings. The idea was to simplify the often overwhelming task of choosing a show by providing tailored recommendations. What started as a small project quickly grew into a platform where fans can explore ratings, reviews, and suggestions to find new anime to enjoy.</p> <p>Our mission is to make finding your next favorite anime easy and enjoyable. With a growing collection and community-driven feedback, Forum Anime connects anime fans and helps you discover shows you might otherwise miss. Join us and let us guide you to your next anime obsession!</p>
+    </div>
+</div>
+
+<div id="series_catalog">
+    {% for serie in series %}
+    {% include "includes/base_serie.html"%}
+    {% endfor %}
+</div>
+{% endblock content %}
